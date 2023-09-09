@@ -2,6 +2,7 @@ return {
   "folke/flash.nvim",
   opts = {
     search = {
+      -- match only beginning of a word
       mode = function(str)
         return "\\<" .. str
       end,
