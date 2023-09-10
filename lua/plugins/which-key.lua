@@ -1,6 +1,6 @@
 return {
   "folke/which-key.nvim",
   opts = {
-    ignore_missing = true,
+    ignore_missing = false,
   },
 }
