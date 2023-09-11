@@ -14,5 +14,10 @@ return {
         shade = 9,
       },
     },
+    modes = {
+      search = {
+        enabled = false,
+      },
+    },
   },
 }
