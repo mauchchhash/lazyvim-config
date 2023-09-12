@@ -4,6 +4,11 @@ return {
     after = {
       "nvimdev/lspsaga.nvim",
     },
+    init = function()
+      local keys = require("lazyvim.plugins.lsp.keymaps").get()
+      -- disabling gr to use it for substitute.nvim
+      keys[#keys + 1] = { "gr", false }
+    end,
   },
   {
     "nvimdev/lspsaga.nvim",
